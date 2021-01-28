@@ -208,5 +208,9 @@ header a{
   .link{
     padding:40px 0px;
   }
+  
+  .card:last-child{
+    margin-bottom:0px;
+  }
 
 }
