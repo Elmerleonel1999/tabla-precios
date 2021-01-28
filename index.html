@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./img/logo@2x.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla De Precios</title>
+</head>
+<body>
+  
+  <header>
+      <a href="index.html">@LeoMárqz</a>
+  </header>
+  
+  <!-- card one -->
+  <div class="container-card">
+
+    <div class="card">
+      <div class="title green">
+        <img src="./img/diamond.png" alt="">
+        <h2>ECONOMICO</h2>
+      </div>
+      <div class="price economic">$ 25</div>
+      <div class="description">
+        <ul>
+          <li> <i class="fa fa-check" aria-hidden="true"></i> 10GB Espacio </li>
+          <li> <i class="fa fa-check" aria-hidden="true"></i> 5 Dominios</li>
+          <li> <i class="fa fa-check" aria-hidden="true"></i> 10 Cuentas De Correo</li>
+          <li> <i id="not" class="fa fa-times" aria-hidden="true"></i> Soporte Economico </li>
+        </ul>
+      </div>
+      <div class="link">
+        <a class="btn-green btn" href="#">Comprar</a>
+      </div>
+      
+    </div>
+
+    <!-- card two -->
+
+      <div class="card">
+        <div class="title blue">
+          <img src="./img/diamond.png" alt="">
+          <h2>PREMIUN</h2>
+        </div>
+        <div class="price premiun">$ 50</div>
+        <div class="description">
+          <ul>
+            <li> <i  class="fa fa-check" aria-hidden="true"></i> 100GB Espacio </li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> 10 Domicios</li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> 50 Cuentas De Correo</li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> Soporte Premiun </li>
+          </ul>
+        </div>
+        <div class="link">
+          <a class="btn-blue btn" href="#">Comprar</a>
+        </div>
+        
+      </div>
+
+      <!-- card three -->
+
+      <div class="card">
+        <div class="title red">
+          <img src="./img/diamond.png" alt="">
+          <h2>EMPRESARIAL</h2>
+        </div>
+        <div class="price company">$ 100</div>
+        <div class="description">
+          <ul>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> Espacio Ilimitado </li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> 25 Domicios</li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> Cuentas De Correo Ilimitadas</li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> Soporte Empresarial </li>
+          </ul>
+        </div>
+        <div class="link">
+          <a class="btn-red btn" href="#">Comprar</a>
+        </div>
+        
+      </div>
+
+  </div>
+
+  <script>
+    let btns = document.querySelectorAll('.btn');
+    console.log(btns);
+    btns.forEach((btn) => {
+      btn.addEventListener('click', mensaje);
+    })
+    
+    function mensaje(){
+      if(confirm("Deseas efectuar la compra?")){
+        alert("Lo sentimos esto es solo html5 y css3");
+      }
+      
+        
+      
+    }
+
+  </script>
+
+</body>
+</html>

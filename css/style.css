@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+*{
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Condensed', sans-serif;
+  color:white;
+}
+
+body{
+  background-image: url(../img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+
+
+header{
+  width:100%;
+  height:90px;
+  display:grid;
+  justify-items: center;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.877);
+  box-shadow: 0px 0px 35px white;
+}
+
+header a{
+  color: white;
+  border-bottom: 1px solid;
+  font-size: 35px;
+  font-weight: 100;
+  font-weight: italic;
+}
+
+/* cards */
+
+.container-card{
+  width:100%;
+  display: grid;
+  grid-template-columns:1fr;
+  gap:15px;
+  position: relative;
+}
+
+.card{
+  width:90%;
+  margin:auto;
+  display: grid;
+  background:#000000;
+  opacity: 0.9;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-top:25px;
+  /* box-shadow:0px 0px 10px rgb(77, 76, 76); */
+}
+
+.card:hover{
+  box-shadow:0px 2px 20px rgb(253, 253, 253);
+  transform: translate(10px, -10px);
+  transition:all 0.4s;
+}
+
+/* ultima tarjeta */
+.card:last-child{
+  margin-bottom:25px;
+}
+.card .title{
+  display: grid;
+  justify-items: center;
+  padding:15px 0px;
+}
+
+.card .green{
+  background:#02CA2C;
+}
+.card .blue{
+  background:#0058B1;
+}
+
+.card .red{
+  background:#c20e01;
+}
+.card img{
+  width:50px;
+}
+
+.card h2{
+  text-align: center;
+}
+
+.price{
+  text-align: center;
+  font-size: 55px;
+  padding:10px 0px;
+}
+
+.economic{
+  color:#01af27;
+}
+
+.premiun{
+  color:#0058B1;
+}
+
+.company{
+  color:#c20e01;
+}
+
+
+.description{
+  width:100%;
+}
+
+.description ul{
+  width:100%;
+}
+
+.description ul li{
+  width:100%;
+  padding:10px 0px;
+  text-align:center;
+  border-bottom: 1px solid #48484A;
+}
+
+.description ul li i{
+  color:#02CA2C;
+}
+
+#not{
+  color:red;
+}
+
+.link{
+  width:100%;
+  padding:15px 0px;
+}
+
+.link a{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  border-radius: 50px;
+  width:60%;
+  margin:auto;
+  padding:10px;
+  font-size: 19px;
+  font-weight: 100;
+}
+
+.btn-green{
+  background:#01af27;
+}
+.btn-green:hover{
+  background:#01c02a;
+  cursor: pointer;
+}
+
+.btn-blue{
+  background:#0058B1;
+}
+.btn-blue:hover{
+  background:#006ad4;
+  cursor: pointer;
+}
+
+.btn-red{
+  background:#c20e01;
+}
+.btn-red:hover{
+  background:#df0f00;
+  cursor: pointer;
+}
+
+
+/* querys */
+
+@media screen and (min-width:568px){
+  header{
+    height: 150px;
+  }
+  header a{
+    font-size: 35px;
+    padding: 10px;
+  }
+  .container-card{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media screen and (min-width:850px){
+  header a{
+    font-size: 65px;
+  }
+  .container-card{
+    max-width: 1200px;
+    grid-template-columns:1fr 1fr 1fr;
+    margin:auto;
+  }
+  .description ul li{
+    padding:15px 0px;
+  }
+
+  .link{
+    padding:40px 0px;
+  }
+
+}
